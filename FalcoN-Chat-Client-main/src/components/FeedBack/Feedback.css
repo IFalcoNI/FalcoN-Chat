@@ -1,0 +1,96 @@
+.FeedBack {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: aqua;
+}
+h2 {
+  margin: 5px;
+}
+.FeedbackForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.FeedbackForm input {
+  width: 60%;
+  height: 35px;
+  outline: none;
+  border: none;
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 17px;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5%;
+}
+.FeedbackForm input::placeholder {
+  color: rgb(192, 192, 192);
+}
+.FeedbackForm input:focus {
+  width: 100%;
+
+  color: black;
+  background-color: rgb(192, 192, 192);
+}
+.FeedbackForm textarea {
+  width: 60%;
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 17px;
+  padding: 15px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5%;
+  overflow-x: hidden;
+}
+.FeedbackForm textarea:focus {
+  width: 100%;
+
+  color: black;
+  background-color: rgb(192, 192, 192);
+}
+.FeedbackForm button {
+  width: 80px;
+  height: 40px;
+  /* background-color: #1a0ec0;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.15s ease-in; */
+  /* text-trans.FeedbackForm: uppercase; */
+}
+.FeedbackForm button {
+  background-color: #1a0ec0;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.15s ease-in;
+  /* text-trans.FeedbackForm: uppercase; */
+}
+.FeedbackForm button:hover {
+  background-color: rgb(56, 192, 14);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+@media screen and (max-width: 500px) {
+  .FeedbackForm input:focus,
+  .FeedbackForm textarea:focus {
+    max-width: 260px;
+  }
+}

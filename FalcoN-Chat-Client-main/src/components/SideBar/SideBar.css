@@ -1,0 +1,163 @@
+html,
+body {
+  margin: 0;
+}
+
+#App {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 25px;
+  height: 15px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #ffffff;
+  max-width: 20px;
+  max-height: 4px;
+  border-radius: 2px;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+.bm-menu-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.bm-menu {
+  padding: 0px;
+}
+.bm-item {
+  padding: 5px 10px;
+  text-align: center;
+}
+.bm-item a{
+  padding: 5px 10px;
+}
+h2 {
+  margin: 30px 20px;
+}
+
+#feedback,
+#subscribe {
+  color: rgba(0, 238, 255, 0.541);
+}
+#users {
+  /* width: 100vw; */
+  /* height: 90%; */
+  cursor: pointer;
+  overflow: scroll;
+  max-height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 5px solid rgb(83, 83, 83);
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+p {
+  /* font-size: 24px; */
+  font-weight: 600;
+  color: rgb(0, 117, 163);
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+  text-align: center;
+  background-color: rgb(148, 148, 148);
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 25px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+ol li:hover {
+  background-color: rgb(190, 190, 190);
+}
+#SideInfo{
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-around;
+  padding: 0;
+}

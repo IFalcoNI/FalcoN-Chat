@@ -1,0 +1,104 @@
+.joinForm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joinInner {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.joinName,
+.joinRoom {
+  width: 90%;
+  height: 35px;
+  outline: none;
+  border: none;
+  background-color: rgba(192, 192, 192, 0.3);
+  border-radius: 17px;
+  padding: 0 15px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 5%;
+}
+.joinName::placeholder,
+.joinRoom::placeholder {
+  color: rgb(192, 192, 192);
+}
+.joinName:focus,
+.joinRoom:focus {
+  width: 100%;
+  color: black;
+  background-color: rgb(192, 192, 192);
+}
+.joinSubmit {
+  width: 80px;
+  height: 40px;
+  /* background-color: #1a0ec0;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 15px;
+  color: white;
+  transition: all 0.15s ease-in; */
+  /* text-transform: uppercase; */
+}
+.joinSubmit_button {
+  width: 100%;
+  height: 40px;
+  background-color: #1a0ec0;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.15s ease-in;
+  /* text-transform: uppercase; */
+}
+.joinSubmit_button:hover {
+  background-color: rgb(56, 192, 14);
+  color: rgba(255, 255, 255, 0.87);
+}
+.joinInner > h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #dddddd;
+  /* text-shadow: 0 0 5px #dddddd, 0 0 10px #dddddd, 0 0 15px #dddddd,
+    0 0 20px rgba(26, 121, 179, 0.5), 0 0 30px rgba(26, 121, 179, 0.5),
+    0 0 40px rgba(26, 121, 179, 0.5), 0 0 55px rgba(26, 121, 179, 0.5),
+    0 0 75px rgba(26, 121, 179, 0.5); */
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  margin: 0 0 40px 0;
+}
+header > h1 {
+  display: flex;
+  /* position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 3%; */
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+}
+header > h1 > p {
+  font-size: 40px;
+  font-weight: bolder;
+  color: rgba(26, 121, 179, 1);
+}
+@media screen and (max-width: 300px) {
+  .joinInner > h1 {
+    font-size: 30px;
+  }
+}
