@@ -1,0 +1,34 @@
+version: '3.3'
+
+services:
+  chat-client:
+    image: chat-client:latest
+    build:
+      context: ./FalcoN-Chat-Client-main
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: chat-client
+    ports:
+      - "80:3000"
+    expose:
+      - "80"
+    networks:
+      - backend
+
+  chat-server:
+    image: chat-server:latest
+    build:
+      context: ./FalcoN-Chat-Server-main
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: chat-server
+    ports:
+      - "5000:5000"
+    expose:
+      - "5000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
