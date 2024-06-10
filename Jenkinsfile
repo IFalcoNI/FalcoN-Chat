@@ -68,7 +68,7 @@ pipeline {
 
         stage('Deploy Site services') {
             steps {
-				dir("Weather_TgBot_Server_Website"){
+				dir("FalcoN-Chat-Client-Server"){
 					sh "docker-compose down -v"
                 	sh "docker container prune --force"
                 	sh "docker image prune --force"
